@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Location Object</h1>
+<h2>The hostname Property</h2>
+
+<p id="demo"></p>
+
+
+<script>
+var regex_var = new RegExp(/(\.[^\.]{0,2})(\.[^\.]{0,2})(\.*$)|(\.[^\.]*)(\.*$)/);
+
+
+var result = location.hostname.replace(regex_var, '').split('.').pop();
+document.write(result);
+</script>
+
+
+
+
+</body>
+</html>
